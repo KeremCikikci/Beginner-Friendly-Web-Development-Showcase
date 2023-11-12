@@ -1,0 +1,582 @@
+/* Allgemein */
+:root{
+	--dark_color: #282a35;
+	--light_color: #04aa6d;
+	--white_color: #eaeaea;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	margin-top: -200px;
+	background-size: cover;
+	height: 630px;
+	width: 100%;
+}
+.robotik_header{
+	background-image: url('../img/robotik_background.jpg');
+}
+.mechanik_header{
+	background-image: url('../img/mechanik_background.jpg');
+}
+.elektronik_header{
+	background-image: url('../img/elektronik_background.png');
+}
+.software_header{
+	background-image: url('../img/software_background.jpg');
+}
+.kontakt_header{
+	background-image: url('../img/kontakt_background.jpg');
+}
+.chat_header{
+	background-image: url('../img/chat_background.jpeg');
+}
+.login_header{
+	background-image: url('../img/login_background.jpg');
+}
+.registrieren_header{
+	background-image: url('../img/registrieren_background.jpg');
+}
+.profil_header{
+	background-image: url('../img/profil_background.jpeg');
+}
+.users_header{
+	background-image: url('../img/users_background.jpg');
+}
+.dashboard_header{
+	background-image: url('../img/dashboard_background.jpeg');
+}
+.update_comment_header{
+	margin-top: -300px;
+	padding-bottom: 100px;
+	background-image: url('../img/update_comment_background.jpg');
+}
+.shop_header{
+	background-image: url('../img/shop_background.jpg');
+}
+header h1{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 6em;
+	padding-top: 450px;
+	color: var(--light_color);
+	font-family: Cursive;
+}
+
+nav{
+	padding: 0.5em 2em 0.2em 2em;
+	background-color: var(--dark_color);
+}
+nav ul{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+nav li{
+	display: inline-block;
+	font-family: Cursive;
+	padding: 0 0.5em 0 0.5em;
+	color: var(--white_color);
+}
+.invisible_list{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+nav li a{
+	text-decoration: none;
+	color: var(--light_color);
+}
+
+div{
+	margin: 4em 12em 0em 12em;
+}
+h2{
+	color: var(--light_color);
+	font-weight: bold;
+	font-size: 3em;
+	margin-bottom: 0.6em;
+}
+
+footer{
+	margin-top: 12em;
+	background-color: var(--dark_color);
+	width: 100%;
+	height: 300px;
+	padding: 1.5em;
+}
+footer a{
+	color: var(--light_color);
+	opacity: 0.8;
+}
+h3{
+	margin-top: 0.5em;
+	color: var(--light_color);
+	font-size: 1.2em;
+}
+footer img{
+	width: 32px;
+}
+footer li{
+	display: inline;
+	padding: 0 0.25em 0 0.25em;
+}
+section{
+	display: inline-block;
+}
+.logo_section{
+	width: 256px;
+	height: 256px;
+}
+
+/* Mechanik */
+figure.einzel {
+	position: relative;
+	display: inline-block;
+	width: 32.9%;
+}
+figure.einzel:hover {
+	transform: scale(1.02);
+	opacity: 0.5;
+}
+figure img {
+	width: 100%;
+	display: block;
+}
+.gesamt {
+	position: relative;
+	color: white;
+}
+
+/* Elektronik */
+table{
+	margin-top: 4em;
+	font-size: 2em;
+	border: 1px solid var(--dark_color);
+}
+th{
+	color: var(--light_color);
+	background-color: var(--dark_color);
+}
+tr{
+	padding: 0 5% 0 5%;
+}
+td{
+	border: 1px solid var(--dark_color);
+}
+.nummer{
+	color: var(--light_color);
+	background-color: var(--dark_color);
+}
+.bauteil_img{
+	height: 36px;
+}
+
+/* Software */
+
+
+/* Kontakt */
+.elektrisches_bauelement{
+	width: 60%; 
+}
+form{
+	font-size: 2em;
+}
+label{
+	color: var(--light_color);
+}
+.update_label_red{
+	color: red;
+}
+input{
+	margin-top: 2px;
+	height: 32px;
+	width: 40%;
+	padding-left: 8px;
+	border-radius: 8px;
+	border-color: var(--dark_color);
+}
+.update_input_red{
+	margin-top: 2px;
+	height: 32px;
+	width: 40%;
+	padding-left: 8px;
+	border-radius: 8px;
+	border-color: red;
+}
+textarea{
+	margin-top: 2px;
+	height: 320px;
+	width: 40%;
+	padding: 8px;
+	resize: none;
+	border: 2px solid var(--dark_color);
+	border-radius: 8px;
+}
+.submit{
+	background-color: var(--light_color);
+	color: var(--dark_color);
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+/* Login */
+.recht{
+	width: 20px;
+	height: 20px;
+	color: var(--dark_color);
+	border-color: var(--dark_color);
+}
+
+/* Contact */
+.form_title{
+	font-size: 2em;
+}
+.form_data{
+	font-size: 1.5em;
+}
+
+/* Chat */
+article li{
+	display: inline-block;
+	height: 300px;
+}
+li textarea{
+	width: 100%;
+}
+.comments{
+}
+.chat_form{
+	margin-left: 1em;
+	margin-top: 1em;
+	width: 20%;
+}
+.chat_comments{
+	margin-left: 1em;
+	width: 60%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.comment{
+	background-color: var(--white_color);
+	width: 60%;
+	border: 2px solid var(--dark_color);
+	border-radius: 10px;
+	margin-top: 1.1em;
+	position: relative;
+}
+.comment_user_div{
+	margin: 0;
+	border-radius: 8px 0px 0px 8px;
+	height: 100%;
+	width: 15%;
+	background-color: var(--dark_color);
+	display: inline-block;
+	position: absolute;
+}
+.comment_username{
+	margin-left: 16px;
+	padding-left: 8px;
+	font-weight: bold;
+	color: var(--light_color);
+	font-size: 1.3em;
+	display: block;
+	margin: 0px auto 0px auto;
+}
+.comment_profil_photo{
+	max-width: 80%;
+	max-height: 50%;
+	display: block;
+	margin: 0px auto 6px auto;
+}
+.comment_massage_div{
+	display: inline-block;
+	padding-left: 4px;
+	margin-left: 15%;
+	margin-top: 0;
+}
+.comment_massage{
+	color: var(--dark_color);
+	font-size: 1.2em;
+}
+.comment_created_at{
+	opacity: 0.6;
+	padding-left: 85%;
+}
+
+/* Profil */
+.profil_label{
+	margin-top: 8px;
+	width: 10%;
+	display: inline-block;
+}
+.photo_div{
+	border-radius: 10px;
+	margin: 1em 0 0 10%;
+	width: 40%;
+	height: 200px;
+	background-color: var(--dark_color);
+	position: relative;
+}
+.photo_image{
+	border-radius: 9px 9px 0 0;
+	width: 100%;
+	height: 90%;
+}
+.invisible_photo_image{
+	border-radius: 9px 9px 0 0;
+	width: 100%;
+	height: 90%;
+	visibility: hidden;
+}
+.file-input{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	bottom: 0px;
+	left: 0px;
+	border-radius: 0px 0px 9px 9px;
+}
+.photo_input{
+	opacity: 0;
+	width: 0.1px;
+	height: 0.1px;
+	position: absolute;
+}
+.file-input{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 10%;
+	border-radius: 0px 0px 9px 9px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--light_color);
+	font-weight: bold;
+	cursor: pointer;
+}
+.photo_label{
+	color: var(--dark_color);
+	font-size: 0.6em;
+}
+
+/* Benutzer */
+.benutzer_div{
+	height: 80%;
+	border: solid 2px var(--dark_color);
+	border-radius: 8px;
+}
+.benutzer_bar{
+	display: inline-block;
+	border-radius: 7px 7px 0 0;
+	margin: 0;
+	width: 100%;
+	height: 12%;
+	background-color: var(--light_color);
+}
+.benutzer_form{
+	align-items: center;
+}
+.benutzer_search_bar{
+	margin-right: 0px;
+	display: inline-block;
+	margin-left: 2em;
+	margin-top: 1em;
+	width: 60%;
+}
+.benutzer_search_button{
+	margin-left: 0px;
+	width: 10%;
+	display: inline-block;
+}
+
+.benutzer_list{
+	margin: 0;
+	width: 100%;
+	height: 88%;
+	background-color: var(--dark_color);
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+/* Dashboard */
+.dashboard_comment_div{
+	max-width: 80%;
+	overflow: scroll;
+	overflow-y: hidden;
+}
+.dashboard_comment_table th{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.dashboard_form{
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+}
+.dashboard_id_input{
+	margin: 0;
+	padding: 0;
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+	border-width: 0px;
+}
+.dashboard_delete_button{
+	margin: 0;
+	width: 70px;
+	padding-left: 0px;
+	background-color: var(--light_color);
+	border-color: var(--dark_color);
+	color: var(--dark_color);
+}
+.dashboard_delete_button_red{
+	margin: 0;
+	width: 70px;
+	padding-left: 0px;
+	background-color: red;
+	border-color: var(--dark_color);
+	color: var(--dark_color);
+}
+.dashboard_profil_div{
+	max-width: 80%;
+	overflow: scroll;
+	overflow-y: hidden;
+}
+.dashboard_profil_photo{
+	max-width: 80%;
+	max-height: 50%;
+	display: block;
+	margin: 0px auto 6px auto;
+}
+
+/* Shop */
+.shop{
+    margin-top: 3em;
+}
+.products{
+    top: 0;
+	margin: 0 5% 0 5%;
+	padding: 0;
+	display: inline-block;
+	width: 60%;
+    max-height: 2000px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+.products ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+.products li{
+	flex: 0 0 32%;
+	height: 300px;
+	margin: 5px;
+    border-radius: 8px;
+}
+.product_form{
+    width: 100%;
+    height: 100%;
+    background-color: var(--light_color);
+    border-radius: 8px;
+    position: relative;
+}
+.product_img{
+    width: 90%;
+    height: 75%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 8px 8px 0px 0px;
+}
+.product_panel{
+    margin: 0px;
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 8px 8px;
+    bottom: 0px;
+    position: absolute;
+}
+.product_info{
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    border-radius: 0 0 8px 8px;
+    display: inline-block;
+}
+.product_name{
+    font-size: 0.6em;
+    padding-left: 4px;
+    overflow: hidden;
+    color: var(--dark_color);
+}
+.product_menge{
+    font-size: 0.4em;
+    overflow: hidden;
+    color: var(--dark_color);
+}
+.product_add{
+    display: inline-block;
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../icons/korb.png');
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+.product_add:hover {
+    transform: scale(1.02);
+    opacity: 0.90;
+}
+
+.cart{
+	margin: 0 5% 0 0;
+	padding: 0;
+	display: inline-block;
+	width: 20%;
+	border-radius: 8px;
+}
+.cart_product_list{
+	margin: 0;
+	border-radius: 8px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.cart_product{
+	width: 100%;
+	height: 75px;
+	background: var(--light_color);
+	margin-bottom: 6px;
+	border-radius: 8px;
+}
+.cart_img{
+	display: inline-block;
+	height: 80%;
+	max-width: 30%;
+	margin: 2% 2% 0px 2%;
+}
+.cart_info{
+	margin: 0;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 50%;
+}
+.cart_name{
+	font-size: 1.2em;
+}
+.cart_menge{
+	font-size: 1.1em;
+}
+.cart_buy{
+	margin-top: 2px;
+	border-radius: 8px;
+	padding: 4px 16px 4px 16px;
+}
